@@ -22,6 +22,9 @@ const handleUserInput = function (key) {
   } else if (key === 's') {
     connection.write("Move: down");
   }
+  if (key === 'm') {
+    connection.write("Say: Wazup Lighthouse Labs");
+  }
   if (key === '\u0003') {
     process.exit();
   }
