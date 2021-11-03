@@ -14,4 +14,8 @@ server.on('data', function(message){ // this is how we receive
 });
 
 console.log("Connecting ...");
-setupInput();
+
+// server.on('connect', () => {
+//   setupInput(server);
+// });
+setupInput(server);
