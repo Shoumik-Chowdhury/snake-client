@@ -1,4 +1,3 @@
-// Stores the active TCP connection object.
 let connection;
 
 const setupInput = function(conn) {
@@ -12,7 +11,6 @@ const setupInput = function(conn) {
 };
 
 const handleUserInput = function (key) {
-  // your code here
   if (key === 'w') {
     connection.write("Move: up");
   } else if (key === 'a') {
